@@ -1,0 +1,36 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+}
+#map {
+    width: 100%;
+    height: 80vh; /* 调整为视窗高度的80% */
+    overflow: hidden; /* 隐藏超出部分，可以改为 scroll 如果你希望用户能滚动查看 */
+    display: flex; /* 使用flex布局来帮助居中SVG */
+    justify-content: center; /* 水平居中 */
+    align-items: center;
+    transform: scale(1.3); /* 放大150% */
+    transform-origin: center center;
+    margin-top: 100px;
+}
+
+.highlight {
+    fill: orange; /* Change color on hover */
+}
+.country {
+    stroke: #fff;
+    stroke-width: 1px;
+    fill: #ccc; /* Default fill color */
+}
+h1 {
+    text-align: center;
+    font-size: 34px; /* 字体大小 */
+    font-family: 'Times New Roman', serif; /* 字体类型为 Times New Roman */
+    color: #003366; /* 深蓝色字体颜色 */
+    margin-top: 20px; /* 顶部边距 */
+    margin-bottom: 0px; /* 底部边距，确保与地图之间有适当的空间 */
+}
+
+
